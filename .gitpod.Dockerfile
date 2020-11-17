@@ -10,3 +10,5 @@ RUN sudo apt-get install libgtest-dev -y
 RUN sudo apt-get install cmake -y
 RUN sudo cmake /usr/src/gtest/CMakeLists.txt
 RUN sudo make -C /usr/src/gtest
+RUN sudo cp /usr/src/gtest/lib/libgtest_main.a /usr/lib
+RUN sudo cp /usr/src/gtest/lib/libgtest.a /usr/lib
